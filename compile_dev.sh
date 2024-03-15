@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "Compiling hugo"
-hugo -D -E -F --baseURL https://homepage-a0c38--preview-7nu6ih31.web.app
+hugo -D -E -F --baseURL https://blog-5b62b--preview-c6mqjn74.web.app 
