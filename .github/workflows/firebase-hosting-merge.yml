@@ -30,7 +30,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo --minify --baseURL https://n9o.xyz
+          hugo --minify --baseURL https://blog-5b62b.web.app
 
       - name: Deploy Production
         uses: FirebaseExtended/action-hosting-deploy@v0
