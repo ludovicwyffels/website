@@ -32,7 +32,7 @@ jobs:
         run: |
           hugo --minify --baseURL https://n9o.xyz
 
-      - node: Deploy Production
+      - name: Deploy Production
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
