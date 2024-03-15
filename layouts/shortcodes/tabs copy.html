@@ -1,0 +1,31 @@
+{{ with .Inner }}{{/* don't do anything, just call it */}}{{ end }}
+{{ $groupId := default "default" (.Get "groupId") }}
+<div class="tab-panel max-w-2xl mx-auto">
+  <div >
+  
+    <div class="tab-nav flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" role="tablist">
+    {{ range $idx, $tab := .Scratch.Get "tabs" }}
+      <div class="me-2" role="presentation">
+        <button
+          data-tab-item="{{ .name }}"
+          data-tab-group="{{ $groupId }}"
+          class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300 active:text-blue-600 active:bg-gray-100 dark:active:bg-gray-800 dark:active:text-blue-500"
+          onclick="switchTab('{{ $groupId }}','{{ .name }}')"
+          type="button" role="tab"
+          >
+          {{ .name }}
+        </button>
+      </div>
+    {{ end }}
+    </div>
+    <div class="tab-content">
+      {{ range $idx, $tab := .Scratch.Get "tabs" }}
+      <div data-tab-item="{{ .name }}" data-tab-group="{{ $groupId }}"
+        class="tab-item bg-gray-50 rounded-lg dark:bg-gray-800">
+          {{ .content }}
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+</div>

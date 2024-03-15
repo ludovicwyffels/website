@@ -1,0 +1,1 @@
+Hey there 👋 and Welcome to the Jungle! This website is a collection of opinion articles and guides on tech and engineering. Whether you're an engineer, a curious student, or just someone who loves tech, we hope that these posts will entertain, enlighten, and maybe even challenge you a bit.

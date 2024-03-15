@@ -1,0 +1,39 @@
+{{ if .IsTranslated }}
+
+<div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    <div class="relative group">
+      <div class="flex items-center justify-end w-full transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600">
+        {{ partial "icon.html" "translate" }}
+        <span class="text-sm ml-2">
+          {{- i18n "global.language" -}}
+          {{ .Lang | upper }}
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="absolute menuhide">
+    <div class="p-2 mt-2 rounded-xl bg-white border border-neutral-300 bg-neutral text-start text-base shadow group-hover:visible dark:border-neutral-600 dark:bg-neutral-800 backdrop-blur-xl shadow-2xl">
+      <div class="flex flex-col space-y-20">
+        {{ $currentLang := .Page.Lang }}
+        {{ range .AllTranslations }}
+          {{ if eq $currentLang .Lang }}
+            <a href="{{ .RelPermalink }}" class="p-1.5 text-sm font-sm text-primary-500 hover:text-primary-900 cursor-default" disabled>
+              {{ .Lang | upper }}
+              &nbsp;
+              {{ .Language.Params.displayName }}
+            </a>
+          {{ else }}
+            <a href="{{ .RelPermalink }}" class="p-1.5 mx-1.5 text-sm font-sm text-gray-500 hover:text-gray-900">
+              {{ .Lang | upper }}
+              &nbsp;
+              {{ .Language.Params.displayName }}
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

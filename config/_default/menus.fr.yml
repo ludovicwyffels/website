@@ -1,0 +1,24 @@
+---
+main:
+  - name: Blog
+    pageRef: blog
+    weight: 1
+  - name: RSS
+    url: /index.xml
+    weight: 2
+
+# subnavigation:
+#   - name: Catégories
+#     pageRef: categories
+#     weight: 1
+#   - name: Tags
+#     pageRef: tags
+#     weight: 2
+#   - name: Séries
+#     pageRef: series
+#     weight: 3
+
+footer:
+  - name: RSS
+    url: /index.xml
+    weight: 1

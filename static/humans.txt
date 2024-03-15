@@ -1,0 +1,7 @@
+/* TEAM */
+	Author: Ludovic Wyffels
+	From:Belgium
+
+/* SITE */
+	Language: French
+	Doctype: HTML5

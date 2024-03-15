@@ -1,0 +1,28 @@
+languageCode: en-us
+languageName: English
+# displayName: English
+# isoCode: en
+weight: 2
+# rtl: false
+title: Code with Ludo
+# description: A collection of opinions on engineering, people and life in general
+# copyright: No rights reserved
+# dateFormat: January 2, 2006
+
+params:
+  displayName: English
+  isoCode: en
+  rtl: false
+  dateFormat: January 2, 2006
+  # logo: img/logo.png
+  # secondaryLogo: img/logo.png
+  description: My awesome website
+  # copyright: "Copy, _right?_ :thinking_face:"
+
+author:
+  name: Code with Ludo
+  image: img/ludo.png
+  headline: Find articles and tutorials on Node, Angular, continuous integration, docker, and more ...
+  links:
+    - link: https://ludovicwyffels.dev
+    - github: https://github.com/ludovicwyffels

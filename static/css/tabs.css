@@ -1,0 +1,119 @@
+:root {
+  --main-bg-color: #FFFFFF;
+  --main-line-color: #ddd;
+}
+
+:root.dark {
+  --main-bg-color: #262C2F
+}
+
+.tabs {
+  border-bottom: 1px solid var(--main-line-color);
+
+  position: relative;
+  width: 100%;
+}
+
+.tab-buttons {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.tab-button {
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tab-button:not(.is-active):hover {
+  /* background-color: #ddd; */
+}
+
+.tab-button:not(.is-active) {
+  
+}
+
+.tab-panel {
+  padding: 20px;
+  display: none;
+}
+
+.tab-panel.is-active {
+  display: block;
+}
+
+
+.tabs .tab-buttons {
+  margin: 0 auto;
+  max-width: 650px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tabs .tab-buttons {
+  position: relative;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  align-items: flex-end;
+  /* height: 40px; */
+  margin-top: 10px;
+  z-index: 2;
+}
+
+.tabs .tab-buttons > li {
+  /* width: 25%; */
+  text-align: center;
+  /* padding: 15px 0px; */
+  color: var(--tw-prose-headings);
+  /* font-size: 18px; */
+  cursor: pointer;
+  /* transition: color 300ms ease-in-out; */
+  border-radius: 10px 10px 0px 0px;
+}
+
+.tabs .tab-buttons > li:hover {
+  color: var(--tw-prose-body);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.tabs .tab-buttons > li.is-active {
+  color: var(--tw-prose-code);
+  /* border-bottom: solid 2px var(--main-line-color); */
+  border-left: solid 1px var(--main-line-color);
+  border-right: solid 1px var(--main-line-color);
+  border-top: solid 1px var(--main-line-color);
+  border-bottom: solid 1px var(--main-bg-color);
+  /* font-weight: bold; */
+  border-radius: 10px 10px 0px 0px;
+  z-index: 10;
+}
+
+.tab-button:not(.is-active) {
+  border-bottom: solid 1px transparent;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.tabs .tab-content {
+  /* position: relative; */
+  margin-top: -9px;
+  border-top: solid 1px var(--main-line-color);
+}
+
+.tabs .tab-content > div {
+  /* position: absolute; */
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  top: -100vh;
+}
+
+.tabs .tab-content > div.is-active {
+  top: 0px;
+  opacity: 1;
+  transition: top 1000ms ease-in-out 1000ms,
+              opacity 1500ms ease-in-out;
+}

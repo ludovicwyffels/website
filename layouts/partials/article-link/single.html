@@ -1,0 +1,20 @@
+<a class="flex flex-wrap article max-w-prose" href="{{ .RelPermalink }}">
+  <div>
+    <div class="flex flex-row flex-wrap grow justify-between mb-3 items-center">
+      <div class="items-center text-xl font-semibold">
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral" href="{{ .RelPermalink }}">
+          {{ .Title | emojify }}
+        </div>
+      </div>
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        <time datetime="{{ . }}">
+          {{- i18n "article.date" (dict "Date" (partial "functions/date.html"
+          .Date)) | markdownify | emojify -}}
+        </time>
+      </div>
+    </div>
+    <div class="py-1 max-w-fit prose dark:prose-invert">
+      {{ .Summary | emojify }}
+    </div>
+  </div>
+</a>

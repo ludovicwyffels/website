@@ -1,0 +1,42 @@
+theme: blowfish
+
+baseUrl: https://ludovicwyffels.dev
+title: "Code avec Ludo"
+defaultContentLanguage: fr
+paginate: 20
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+enableGitInfo: true
+canonifyURLs: true
+
+summaryLength: 30
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: nord
+
+taxonomies:
+  tag: tags
+  category: categories
+  author: authors
+  series: series

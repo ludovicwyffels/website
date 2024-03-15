@@ -1,0 +1,1 @@
+Bonjour 👋 et Bienvenue! Ce site web est une collection d'articles d'opinion et de guides sur la technologie et l'ingénierie.  Que tu soit un ingénieur, un étudiant curieux ou simplement quelqu'un qui aime la technologie, nous espérons que ces articles te divertiront, t'éclairement et te mettront peut-être un peu au défi.
