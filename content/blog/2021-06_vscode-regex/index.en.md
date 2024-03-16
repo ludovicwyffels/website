@@ -36,7 +36,7 @@ To search for a character in a set, just put `[]`. For example, a lowercase lett
 
 You can use `|` to specify one or more words: `me|you|we|you` searches for the words `me`, `you`, `we` or `you`.
 
-### Special characters
+**Special characters:**
 
 - `\n` line break
 - `\r` carriage return
@@ -46,7 +46,7 @@ You can use `|` to specify one or more words: `me|you|we|you` searches for the w
 - `^` designates the beginning of a line
 - `$` designates the end of a line
 
-### Shortcuts
+**Shortcuts:**
 
 - `\w` which is equivalent to `[a-zA-Z0-9_]`.
 - `\W` to `[^a-zA-Z0-9_]` so the opposite of `\w`.
@@ -57,14 +57,14 @@ You can use `|` to specify one or more words: `me|you|we|you` searches for the w
 - `.` to any character except line break
 - `\b` searches for all `\w` sequences whose first and/or last letter is the preceding one.
 
-### To set the number of occurrences of a character or set
+To set the number of occurrences of a character or set
 
 - `?` to zero or one occurrence of a search
 - `+` to one or more occurrences of a search.
 - `*` to zero or more occurrences of a search.
 - `{i,j}` same as above, but define the minimum and maximum number of repetitions.
 
-### Capture
+**Capture:**
 
 - `(...)` captures the content for reuse in the replace field with the `$n` character. `n` is the index of the `()` occurrence.
 
@@ -72,7 +72,7 @@ If you are looking for one of the reserved characters, you have to escape them w
 
 ## Some examples
 
-### In an Ansible playbook, you forgot to surround a variable name with spaces
+**In an Ansible playbook, you forgot to surround a variable name with spaces.**
 
 `"{{variable}}"` should be written as `"{{ variable }}"`.
 
@@ -81,7 +81,7 @@ We need to add escapes since we are looking for `{}`. :
 - In the search field:  `\{\{(\w+)\}\}`
 - In the replacement field: `{{ $1 }}`
 
-### In job descriptions, we would like the first letter of the job to be capitalized
+**In job descriptions, we would like the first letter of the job to be capitalized.**
 
 - In the search field: `(\s+) - name: (\w+)`
 - In the replacement field: `$1 - name: \u$2`

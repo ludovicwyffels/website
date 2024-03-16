@@ -36,7 +36,7 @@ Pour rechercher un caractère dans un ensemble, il suffit de mettre `[]`. Par ex
 
 `|` permet d'indiquer un ou plusieurs mots: `moi|toi|nous|vous` recherche les mots `moi`, `toi`, `nous` ou `vous`.
 
-### Les caractères spéciaux
+**Les caractères spéciaux:**
 
 - `\n` saut de ligne
 - `\r` retour chariot
@@ -46,7 +46,7 @@ Pour rechercher un caractère dans un ensemble, il suffit de mettre `[]`. Par ex
 - `^` désigne le début d’une ligne
 - `$` désigne la fin d’une ligne
 
-### les raccourcis
+**Les raccourcis:**
 
 - `\w` qui équivaut à `[a-zA-Z0-9_]`
 - `\W` à `[^a-zA-Z0-9_]` donc le contraire de `\w`
@@ -57,14 +57,14 @@ Pour rechercher un caractère dans un ensemble, il suffit de mettre `[]`. Par ex
 - `.` à n’importe quel caractère sauf retour à la ligne
 - `\b` recherche toutes les séquences `\w` dont la première et/ou la dernière lettre est la précédant.
 
-### Pour définir le nombre d'occurence d'un caractère ou d'un ensemble
+**Pour définir le nombre d'occurence d'un caractère ou d'un ensemble:**
 
 - `?` à zéro ou une occurrence d’une recherche
 - `+` à une ou plus d’occurence(s) d’une recherche.
 - `*` à zéro ou plus d’occurence(s) d’une recherche.
 - `{i,j}` idem ,mais on définit le nombre de répétitions mini et maxi.
 
-### La capture
+**La capture:**
 
 - `(...)` permet de capturer le contenu afin de le réutiliser dans la zone remplacement avec le caractère `$n`. `n` étant l’index de l’occurence `()`.
 
@@ -72,7 +72,7 @@ Si vous recherchez un caractère parmi ceux qui sont réservé il faudra les éc
 
 ## Quelques exemples
 
-#### Dans un playbook Ansible, vous avez oublié d’entourer d’espaces le nom d’une variable.
+**Dans un playbook Ansible, vous avez oublié d’entourer d’espaces le nom d’une variable.**
 
 `"{{variable}}"` doit s’écrire `"{{ variable }}"`.
 
@@ -81,7 +81,7 @@ On doit ajouter des échappements puisque nous recherchons des `{}` :
 - Dans la zone recherche : `\{\{(\w+)\}\}`
 - Dans la zone remplacement : `{{ $1 }}`
 
-#### Dans les descriptions de tâches, nous aimerions que la première lettre de celle-ci soit en Majuscule.
+**Dans les descriptions de tâches, nous aimerions que la première lettre de celle-ci soit en Majuscule.**
 
 - Dans la zone recherche : `(\s+) - name: (\w+)`
 - Dans la zone remplacement : `$1 - name: \u$2`
