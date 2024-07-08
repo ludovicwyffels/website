@@ -3,7 +3,7 @@ const fs = require("fs");
 var base_url = "/";
 
 if (process.env.CF_PAGES_BRANCH === "main" || process.env.CF_PAGES_BRANCH === "master") {
-  base_url = "https://ludovicwyffels/";
+  base_url = "https://ludovicwyffels.dev/";
 } else if (process.env.CF_PAGES_URL) {
   base_url = process.env.CF_PAGES_URL;
 }
