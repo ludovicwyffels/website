@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "hugo-extended": "^0.128.0",
+    "patch-package": "^8.0.0"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "postinstall": "patch-package"
+  }
+}
