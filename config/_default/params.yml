@@ -2,6 +2,7 @@
 colorScheme: noir
 defaultAppearance: light
 autoSwitchAppearance: true
+
 enableSearch: true
 enableCodeCopy: true
 disableImageOptimization: false
@@ -17,32 +18,38 @@ keywords:
   - Software Development
   - Tech
 
-list:
-  showHero: false
-  heroStyle: basic
-  showBreadcrumbs: false
-  layoutBackgroundBlur: true
-  layoutBackgroundHeaderSpace: true
-  showTableOfContents: false
-  showSummary: true
-  showViews: false
-  showLikes: false
-  showCards: true
-  groupByYear: true
+header:
+  layout: fixed-fill-blur #valid options: basic, fixed, fixed-fill-blur
+  showAppearanceSwitcher: true
+
+footer:
+  showMenu: true
+  showCopyright: true
+  showThemeAttribution: true
+  showAppearanceSwitcher: true
+  showScrollToTop: true
+
+homepage:
+  layout: profile # valid option: page, profile, hero, card, background, custom
+  homepageImage: img/ludo.png #used in: hero and card
+  showRecent: true
+  showRecentItems: 5
+  showMoreLink: true
+  showMoreLinkDest: /blog
   cardView: false
+  cardViewScreenWidth: false
+  layoutBackgroundBlur: false
 
 article:
   showDate: true
-  showViews: false
-  showLikes: false
+  # showViews: false
+  # showLikes: false
   showDateOnlyInArticle: false
   showDateUpdated: false
   showAuthor: false
-  showHero: true
-  heroStyle: big
-  layoutBackgroundBlur: false
-  layoutBackgroundHeaderSpace: false
-  showBreadcrumbs: false
+  showHero: false
+  heroStyle: big # valid optinos: basic, big, background
+  showBreadcrumbs: true
   showDraftLabel: true
   showEdit: false
   # editURL: https://github.com/ludovicwyffels/blog
@@ -53,26 +60,35 @@ article:
   invertPagination: false
   showReadingTime: true
   showTableOfContents: true
-  showRelatedContent: false
-  relatedContentLimit: 3
   showTaxonomies: false
   showAuthorsBadges: false
-  showWordCount: false
-  showComments: false
-  sharingLinks: false
-  showZenMode: true
+  showWordCount: true
+  showSummary: true
 
-homepage:
-  layout: profile
-  # layout: page
-  homepageImage: img/ludo.png
-  showRecent: true
-  showRecentItems: 5
-  showMoreLink: true
-  showMoreLinkDest: /blog
+  showRelatedContent: true
+  relatedContentLimit: 3
+  
+  showComments: false
+  showZenMode: true
+  # sharingLinks: false
+  sharingLinks:
+    - linkedin
+    - twitter
+    - whatsapp
+    - pinterest
+    - reddit
+    - facebook
+    - email
+
+list:
+  showBreadcrumbs: false
+  showSummary: true
+  showTableOfContents: false
+  showCards: true
+  groupByYear: true
   cardView: false
   cardViewScreenWidth: false
-  layoutBackgroundBlur: false
+  constrainItermsWith: true
 
 taxonomy:
   showSummary: true
@@ -81,14 +97,3 @@ term:
   showSummary: true
   showHero: true
   heroStyle: basic
-
-header:
-  layout: fixed-fill-blur
-  showAppearanceSwitcher: true
-
-footer:
-  showMenu: true
-  showCopyright: true
-  showThemeAttribution: true
-  showAppearanceSwitcher: true
-  showScrollToTop: true

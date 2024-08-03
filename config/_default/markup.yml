@@ -1,4 +1,9 @@
+goldmark:
+  renderer:
+    unsafe: true
+
 highlight:
+  noClasses: false
   anchorLineNos: false
   codeFences: true
   guessSyntax: false
@@ -8,7 +13,11 @@ highlight:
   lineNoStart: 1
   lineNos: false
   lineNumbersInTable: true
-  noClasses: true
+  # noClasses: true
   noHl: false
   style: nord
   tabWidth: 4
+
+tableOfContents:
+  startLevel: 2
+  endLevel: 4
