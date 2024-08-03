@@ -1,9 +1,13 @@
 :root {
     --terminal-bg: #1C1D21;
+    --terminal-top: #edeef1;
+    --terminal-top-font: #474746;
 }
 
 .dark {
     --terminal-bg: #2E2E33;
+    --terminal-top: #282725;
+    --terminal-top-font: #b3b3b1;
 }
 
 .terminal {
@@ -11,8 +15,8 @@
     position: relative;
 }
 .terminal .top {
-    background: var(--code-bg);
-    color: var(--secondary);
+    background: var(--terminal-top);
+    color: var(--terminal-top-font);
     padding: 5px;
     border-radius: 5px 5px 0 0;
     font-size: 14px;
@@ -41,6 +45,11 @@
 .terminal .terminalbody {
     background: var(--terminal-bg);
     overflow: auto;
+}
+
+.terminal .terminalbody .highlight {
+    margin: -24px 0;
+    border-radius: 0;
 }
 
 .shadow { box-shadow: 0px 0px 10px rgba(0,0,0,.4)}
