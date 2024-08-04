@@ -1,3 +1,17 @@
+# Hugo
+public
+resources/_gen/
+
+# dotenv environment variables file
+.env
+.env.test
+
+# jampack cache
+.jampack
+
+# firebase
+.firebase
+
 #others
 node_modules
 .hugo_build.lock
@@ -8,7 +22,3 @@ node_modules
 ._*
 .Spotlight-V100
 .Trashes
-
-# Hugo
-public
-

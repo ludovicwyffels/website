@@ -22,4 +22,18 @@ if (cmd.error) {
 console.log(cmd.stdout);
 console.error(cmd.stderr);
 
+console.log("Optimizes static websites");
+cmd = spawn.sync(
+  "npx",
+  ["@divriots/jampack", "./public"],
+  { encoding: "utf8" },
+);
+
+if (cmd.error) {
+  console.log("ERROR: ", cmd.error);
+}
+
+console.log(cmd.stdout);
+console.error(cmd.stderr);
+
 process.exit(cmd.status);
