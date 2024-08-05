@@ -3,7 +3,7 @@ title: Comment éditer les messages de Git Commit
 authors: [ludovicwyffels]
 date: 2024-08-04T7:00:00+02:00
 summary: ""
-draft: true
+draft: false
 showToc: true
 # featureimage: https://images.unsplash.com/photo-1556075798-4825dfaaf498
 featureimagecaption: Photo de [Yancy Min](https://unsplash.com/@yancymin) sur [Unsplash](https://unsplash.com/photos/a-close-up-of-a-text-description-on-a-computer-screen-842ofHC6MaI)
