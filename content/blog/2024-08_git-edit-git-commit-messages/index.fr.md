@@ -2,10 +2,9 @@
 title: Comment éditer les messages de Git Commit
 authors: [ludovicwyffels]
 date: 2024-08-04T7:00:00+02:00
-summary: ""
+summary: Dans le monde du contrôle de version, les erreurs arrivent - y compris dans les messages de validation. Heureusement, Git fournit un moyen simple de corriger ces messages, qu’il s’agisse du premier commit ou de n’importe quel commit dans votre dépôt.
 draft: false
 showToc: true
-# featureimage: https://images.unsplash.com/photo-1556075798-4825dfaaf498
 featureimagecaption: Photo de [Yancy Min](https://unsplash.com/@yancymin) sur [Unsplash](https://unsplash.com/photos/a-close-up-of-a-text-description-on-a-computer-screen-842ofHC6MaI)
 
 tags:
