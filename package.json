@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "cross-spawn": "^7.0.3",
-    "hugo-extended": "^0.128.0",
+    "hugo-extended": "^0.136.5",
     "patch-package": "^8.0.0"
   },
   "scripts": {
@@ -9,6 +9,6 @@
     "postinstall": "patch-package"
   },
   "devDependencies": {
-    "@divriots/jampack": "^0.25.0"
+    "@divriots/jampack": "^0.30.0"
   }
 }
