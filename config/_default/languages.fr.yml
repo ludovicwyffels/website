@@ -19,10 +19,12 @@ params:
   description: My awesome website
   # copyright: "Copy, _right?_ :thinking_face:"
 
-author:
-  name: Code avec Ludo
-  image: img/ludo.png
-  headline: Trouvez des articles et des tutoriels sur Node, Angular, intégration continue, docker, et plus ...
-  links:
-    - link: https://ludovicwyffels.dev
-    - github: https://github.com/ludovicwyffels
+  author:
+    name: Code avec Ludo
+    image: img/ludo2022.webp
+    imageQuality: 96
+    headline: Trouvez des articles et des tutoriels sur Node, Angular, intégration continue, docker, et plus ...
+    bio: A little bit about you
+    links:
+      - link: https://ludovicwyffels.dev
+      - github: https://github.com/ludovicwyffels

@@ -1,5 +1,5 @@
 ---
-colorScheme: noir
+colorScheme: slate
 defaultAppearance: light
 autoSwitchAppearance: true
 
@@ -31,7 +31,7 @@ footer:
 
 homepage:
   layout: profile # valid option: page, profile, hero, card, background, custom
-  homepageImage: img/ludo.png #used in: hero and card
+  homepageImage: img/ludo2022.webp #used in: hero and card
   showRecent: true
   showRecentItems: 5
   showMoreLink: true
@@ -45,7 +45,7 @@ article:
   # showViews: false
   # showLikes: false
   showDateOnlyInArticle: false
-  showDateUpdated: false
+  showDateUpdated: true
   showAuthor: false
   showHero: true
   heroStyle: big # valid optinos: basic, big, background

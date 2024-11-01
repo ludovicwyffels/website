@@ -21,7 +21,7 @@ params:
 
 author:
   name: Code with Ludo
-  image: img/ludo.png
+  image: img/ludo2022.webp
   headline: Find articles and tutorials on Node, Angular, continuous integration, docker, and more ...
   links:
     - link: https://ludovicwyffels.dev
