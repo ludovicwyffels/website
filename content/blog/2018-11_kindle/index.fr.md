@@ -2,7 +2,7 @@
 title: "Comment envoyer un epub vers une Kindle sans utiliser Calibre ni de cable USB ?"
 authors: [ludovicwyffels]
 date: 2018-11-24T10:15:21+02:00
-summary: ""
+summary: Si vous avez un Kindle d’Amazon, vous ne le savez peut-être pas, mais vous possédez une adresse mail ….@kindle.com qui vous permet de vous envoyer des livres et documents directement sur votre liseuse.
 draft: false
 categories: ["Ebook"]
 tags:

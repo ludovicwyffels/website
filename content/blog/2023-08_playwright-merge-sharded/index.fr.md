@@ -2,7 +2,7 @@
 title: "Fusionner vos rapports Playwright en un seul rapport HTML"
 authors: [ludovicwyffels]
 date: 2023-08-25T14:00:00+02:00
-summary: ""
+summary: Dans un précédent billet de blog, "L'utilisation de tests Playwright en combinaison avec une matrice de tâches pour améliorer la vitesse de la CI", nous avons vu comment diviser notre suite de tests Playwright en plusieurs lots afin d'accélérer le pipeline de construction.
 draft: false
 showToc: true
   

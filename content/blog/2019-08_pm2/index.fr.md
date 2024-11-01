@@ -2,7 +2,7 @@
 title: "Prise en main de PM2, le gestionnaire de processus Node.js"
 authors: [ludovicwyffels]
 date: 2019-08-01T21:33:05+02:00
-summary: ""
+summary: PM2 a beaucoup d'utilisations, jetons un coup d'oeil à quelques-unes d'entre elles
 draft: false
 categories: ["Node.js", "PM2"]
 tags:

@@ -2,7 +2,7 @@
 title: "Configuration locale de Kubernetes avec minikube sur MacOS"
 authors: [ludovicwyffels]
 date: 2019-05-23T08:19:47+02:00
-summary: ""
+summary: Dans ce guide, je vais essayer de vous aider à le mettre en marche sur votre machine locale, à donner quelques conseils sur où et comment effectuer certaines tâches et à le rendre aussi capable (je suppose quand vous utilisez k8s que vous veulent apprendre et utiliser Helm, etcd, istio, etc.).
 draft: false
 categories: ["Kubernetes", "DevOps"]
 tags:

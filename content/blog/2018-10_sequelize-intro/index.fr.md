@@ -2,7 +2,7 @@
 title: Démarrer avec Sequelize
 authors: [ludovicwyffels]
 date: 2018-10-12T19:41:34+02:00
-summary: ''
+summary: ORM ou Object Relation Mapping est un processus de mappage entre des objets et des systèmes de base de données relationnels. Un ORM agit comme une interface entre deux systèmes. Les ORM offrent aux développeurs des avantages de base, tels que la réduction du temps et des efforts et la concentration sur la logique métier. Le code est robuste au lieu de redondant. ORM aide à gérer les requêtes sur plusieurs tables de manière efficace. Enfin, un ORM (comme sequelize) est capable de se connecter à différentes bases de données (ce qui est pratique lors du passage d’une base de données à une autre).
 draft: false
 categories: [Node.js, Sequelize]
 tags:

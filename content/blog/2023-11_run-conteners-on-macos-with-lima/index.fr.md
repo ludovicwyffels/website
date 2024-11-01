@@ -2,7 +2,7 @@
 title: "Exécuter des containers sur MacOS avec Lima"
 authors: [ludovicwyffels]
 date: 2023-11-25T15:14:35+02:00
-summary: ""
+summary: Utiliser Docker sur MacOS peut être un problème, étant donné que Docker Desktop est un peu agressif avec la consommation des ressources de la machine et le changement de leur license depuis le 31 janvier 2022, c'est pourquoi certaines alternatives ont été créées, Lima en fait partie, et c'est de cela que je vais parler un peu.
 draft: false
 showToc: true
 cover: cover.png
