@@ -1,5 +1,6 @@
 const spawn = require("cross-spawn");
 
+// Default options
 const options = {
   optimisation: false
 };
@@ -13,7 +14,7 @@ args.forEach(arg => {
 });
 
 let baseURL = "/";
-// Configure the base URL for deployment on CF Pageswith support of Preview environment
+// Configure the base URL for deployment on CF Pages with support of Preview environment
 if (process.env.CF_PAGES_BRANCH === "main" || process.env.CF_PAGES_BRANCH === "master") {
   baseURL = "https://ludovicwyffels.dev/";
 } else if (process.env.CF_PAGES_URL) {
@@ -39,7 +40,7 @@ if (options.optimisation) {
   console.log("Optimizes static websites");
   cmd = spawn.sync(
     "npx",
-    ["@divriots/jampack", "./public"],
+    ["@divriots/jampack", "./public", "--onlyoptim"],
     { encoding: "utf8" },
   );
   
