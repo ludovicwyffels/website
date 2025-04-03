@@ -3,7 +3,8 @@ title: "How to set up multiple SSH keys for multiple accounts"
 authors:
   - ludovicwyffels
 date: 2022-05-14T15:03:35+02:00
-summary: ""
+summary: "I have personal and work accounts on [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/) and [Bitbucket](https://bitbucket.org/).
+How could I set all of this to work properly through SSH keys so that my system relies on the correct SSH key based on the identity it needs to use"
 draft: false
 tags:
   - "git"
