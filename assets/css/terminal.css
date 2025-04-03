@@ -43,7 +43,8 @@
 .yellow{ background: #F5C04F; border-color: #D6A13D; }
 .clear{clear: both;}
 .terminal .terminalbody {
-    background: var(--terminal-bg);
+    /* background: var(--terminal-bg); */
+    background-color: transparent;
     overflow: auto;
 }
 

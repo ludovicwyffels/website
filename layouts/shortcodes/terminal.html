@@ -7,7 +7,7 @@
             <span class="circle yellow"></span>
             <span class="circle green"></span>
         </div>
-        <div class="title">{{ with .Get "title" }}{{.}}{{ else }}~{{ .Page.RelPermalink }}{{ end }}</div>
+        <div class="title">{{ with .Get "title" }}{{.}}{{ else }}Terminal{{ end }}</div>
     </div>
     <div class="terminalbody">
         {{ .Inner | markdownify }}
