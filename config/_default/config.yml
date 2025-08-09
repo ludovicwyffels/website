@@ -3,7 +3,6 @@ theme: blowfish
 baseUrl: https://ludovicwyffels.dev
 title: "Code avec Ludo"
 defaultContentLanguage: fr
-paginate: 20
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
