@@ -5,9 +5,6 @@ date: 2024-07-06T18:00:00+02:00
 summary: "Dans le monde dynamique du développement et des tests d'API, l'automatisation est essentielle."
 draft: false
 showToc: true
-featureimage: https://github.com/usebruno/bruno/blob/main/assets/images/landing-2.png
-featureimagecaption: Image de Bruno sur [Github](https://github.com/usebruno/bruno/blob/main/assets/images/landing-2.png)
-  
 tags:
   - Postman
   - API
