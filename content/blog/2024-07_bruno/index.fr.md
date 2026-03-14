@@ -5,9 +5,6 @@ date: 2024-07-01T8:00:00+02:00
 summary: "Bruno est un nouveau client API innovant, conçu pour remettre en question le statu quo représenté par Postman et d'autres outils similaires."
 draft: false
 showToc: true
-featureimage: https://github.com/usebruno/bruno/blob/main/assets/images/landing-2.png
-featureimagecaption: Image de Bruno sur [Github](https://github.com/usebruno/bruno/blob/main/assets/images/landing-2.png)
-  
 tags:
   - Postman
   - API
